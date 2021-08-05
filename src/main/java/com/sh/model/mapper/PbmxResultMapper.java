@@ -114,11 +114,11 @@ public interface PbmxResultMapper {
 	 */
 	@Insert("insert into pbmx_lixian_result(id,lyxt,bdh,bah,lkrxm,lkrkhh,lkryhkh,zhifu,gyxm,gynl,gysfzhm,gysjh,zffs,gyyhkkhh,gyyhkh,tbr,bbxr,"
 			+ "qbsj,cxsj,cxdd,hyfxfl,zcxrc,ztbrc,zlpje,zbf,scdj,scpcj,ylf,qtf,yyf,wgf,zybz,qtf2,pfje,bz,jgts,rczb,jezb,fyxmszb,scjzz,"
-			+ "lkrxz,yhkxz,sfky_jgts,sfky_rczb,sfky_jezb,sfky_fyxmszb,sfky_ylf,sfky_scjzz,sfky_lkrxz,sfky_yhkxz,zxfs,extrp,batch_id)values("
+			+ "lkrxz,yhkxz,sfky_jgts,sfky_rczb,sfky_jezb,sfky_fyxmszb,sfky_ylf,sfky_scjzz,sfky_lkrxz,sfky_yhkxz,zxfs,extrp,batch_id,fklx)values("
 			+ "#{id},#{lyxt},#{bdh},#{bah},#{lkrxm},#{lkrkhh},#{lkryhkh},#{zhifu},#{gyxm},#{gynl},#{gysfzhm},#{gysjh},#{zffs},#{gyyhkkhh}"
 			+ ",#{gyyhkh},#{tbr},#{bbxr},#{qbsj},#{cxsj},#{cxdd},#{hyfxfl},#{zcxrc},#{ztbrc},#{zlpje},#{zbf},#{scdj},#{scpcj},#{ylf},"
 			+ "#{qtf},#{yyf},#{wgf},#{zybz},#{qtf2},#{pfje},#{bz},#{jgts},#{rczb},#{jezb},#{fyxmszb},#{scjzz},#{lkrxz},#{yhkxz},#{sfkyJgts}"
-			+ ",#{sfkyRczb},#{sfkyJezb},#{sfkyFyxmszb},#{sfkyYlf},#{sfkyScjzz},#{sfkyLkrxz},#{sfkyYhkxz},#{zxfs},#{extrp},#{batchId})")
+			+ ",#{sfkyRczb},#{sfkyJezb},#{sfkyFyxmszb},#{sfkyYlf},#{sfkyScjzz},#{sfkyLkrxz},#{sfkyYhkxz},#{zxfs},#{extrp},#{batchId},#{fklx})")
 	@Options(useGeneratedKeys = true, keyColumn = "id", keyProperty = "id")
 	Boolean savePbmxResult(PbmxEntity pbmx);
 

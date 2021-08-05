@@ -102,4 +102,5 @@ public class PbmxEntity implements Serializable {
     public String zxfs;//置信度
     public String zql;//准确率
     public String ljpdd;//逻辑判断点
+    public String fklx; //付款类型
 }
